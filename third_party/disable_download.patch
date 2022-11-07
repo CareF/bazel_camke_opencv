@@ -1,0 +1,12 @@
+diff --git a/cmake/OpenCVDownload.cmake b/cmake/OpenCVDownload.cmake
+index 3e46515537..32183c5190 100644
+--- a/cmake/OpenCVDownload.cmake
++++ b/cmake/OpenCVDownload.cmake
+@@ -82,6 +82,7 @@ function(ocv_init_download_mirror)
+ endfunction()
+ 
+ function(ocv_download)
++  return()
+   cmake_parse_arguments(DL "UNPACK;RELATIVE_URL" "FILENAME;HASH;DESTINATION_DIR;ID;STATUS" "URL" ${ARGN})
+ 
+   function(ocv_download_log)
